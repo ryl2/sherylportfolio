@@ -1,0 +1,112 @@
+/* Custom component styles that complement Tailwind */
+.portfolio-container {
+  min-height: 100vh;
+}
+
+/* Enhanced backdrop blur for better browser compatibility */
+.enhanced-backdrop {
+  backdrop-filter: blur(20px) saturate(1.8);
+  -webkit-backdrop-filter: blur(20px) saturate(1.8);
+}
+
+/* Custom gradient animations */
+.gradient-animate {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Smooth scroll enhancement */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom loading animation for components */
+.skeleton-loading {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+.dark .skeleton-loading {
+  background: linear-gradient(90deg, #374151 25%, #4b5563 50%, #374151 75%);
+  background-size: 200% 100%;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Enhanced focus styles for better accessibility */
+.focus-enhanced:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  body {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}
+
+
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: #00eaff;
+}
+
+/* SKILLS */
+.skills-list {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li {
+  background: #111;
+  padding: 10px 15px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border-left: 4px solid #00eaff;
+}
+
+/* PROJECT CARD */
+.project-card {
+  background: #111;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 12px;
+  border-left: 4px solid #00eaff;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  background: #1a1a1a;
+  cursor: pointer;
+}
