@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://ryl2.github.io/sherylportfolio",
+  "homepage": "https://github.com/ryl2/sherylportfolio.git",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
