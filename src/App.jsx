@@ -480,7 +480,7 @@ export default function App() {
                     description: 'A comprehensive food ordering platform featuring restaurant management, menu customization, order tracking, and payment integration. Built with modern web technologies for seamless user experience.',
                     tech: ['Bootstrap', 'Js', 'CSS'],
                     color: 'primary',
-                    image: './images/food.png',
+                    image: '/images/food.png',
                     github: null,
                     demo: 'https://oss.csusolana.online'
                   },
@@ -489,7 +489,7 @@ export default function App() {
                     description: 'Faculty Information and Evaluation System (FIES) - An innovative web application developed for academic institution management, featuring faculty evaluation, information management, and reporting systems.',
                     tech: ['Js', 'PHP', 'Bootstrap'],
                     color: 'success',
-                    image: './images/csufies.png',
+                    image: '/images/csufies.png',
                     github: null,
                     demo: 'https://fies.csusolana.online'
                   },
@@ -499,9 +499,9 @@ export default function App() {
                     description: 'A dynamic presentation website for startup pitches and business proposals. Features interactive elements, responsive design, and engaging visuals to effectively communicate business ideas to potential investors.',
                     tech: ['CSS', 'Bootstrap', 'PHP'],
                     color: 'info',
-                    image: './images/lemonade.png',
+                    image: '/images/lemonade.png',
                     github: null,
-                    demo: 'https:/csusolana.online/lemonade'
+                    demo: 'https://csusolana.online/lemonade'
                   }
                 ].map((project, index) => (
                   <div key={project.title} className="col-lg-6 col-xl-4">
